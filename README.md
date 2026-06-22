@@ -35,15 +35,15 @@ The resulting synthetic data is used to fine-tune Qwen3-8B via LoRA, evaluated a
 
 ## Pipeline
 
-![Pipeline](assets/pipeline.png)
+![Pipeline](assets/pipeline.jpg)
 
 ### Agentic Retrieval Architecture
 
-![Agent Pipeline](assets/pipeline_detail.png)
+![Agent Pipeline](assets/pipeline_detail.jpg)
 
 ## Results
 
-![Results](assets/results.png)
+![Results](assets/result.png)
 
 ## Repository Structure
 
