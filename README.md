@@ -73,7 +73,7 @@ agentic_web_rag/
 ## Installation
 
 \`\`\`bash
-git clone https://github.com/<your-username>/agentic_web_rag.git
+git clone https://github.com/yifanyang16/agentic_web_rag.git
 cd agentic_web_rag
 pip install -r requirements.txt
 \`\`\`
