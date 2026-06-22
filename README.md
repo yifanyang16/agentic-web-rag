@@ -1,7 +1,6 @@
 # agentic_web_rag
 
-An agentic web retrieval framework that replaces static corpus retrieval for zero-shot synthetic QA generation and domain-adaptive LLM fine-tuning.
-
+An end-to-end agentic system that generates domain-specific synthetic QA datasets from live web data and uses them to fine-tune LLMs.
 This project was developed as part of my master's thesis at the University of Copenhagen, focused on agentic web retrieval for synthetic data generation and LLM adaptation.
 
 ## Motivation
