@@ -47,7 +47,7 @@ The resulting synthetic data is used to fine-tune Qwen3-8B via LoRA, evaluated a
 
 ## Repository Structure
 
-\`\`\`
+```
 agentic_web_rag/
 ├── web_retrieval/              # Agentic web retrieval pipeline
 │   ├── pipeline.py             # Main pipeline orchestration
@@ -68,41 +68,41 @@ agentic_web_rag/
 ├── train_and_eval/             # LoRA fine-tuning and evaluation scripts
 ├── requirements.txt
 └── LICENSE
-\`\`\`
+```
 
 ## Installation
 
-\`\`\`bash
+```bash
 git clone https://github.com/yifanyang16/agentic_web_rag.git
 cd agentic_web_rag
 pip install -r requirements.txt
-\`\`\`
+```
 
 Set up your SerpAPI key:
 
-\`\`\`bash
+```bash
 cp .env.example .env
 # Add your SerpAPI key to .env
-\`\`\`
+```
 
 The pipeline also requires a local vLLM server for LLM inference (serving Qwen3-8B). Start it separately before running the pipeline.
 
 ## Usage
 
 **1. Run agentic web retrieval:**
-\`\`\`bash
+```bash
 python web_retrieval/pipeline.py
-\`\`\`
+```
 
 **2. Generate synthetic QA data:**
-\`\`\`bash
+```bash
 python data_generation/create_task_samples_qwen3.py
-\`\`\`
+```
 
 **3. Fine-tune and evaluate:**
-\`\`\`bash
+```bash
 # See scripts in train_and_eval/
-\`\`\`
+```
 
 ## Models & Benchmarks
 
@@ -112,7 +112,7 @@ python data_generation/create_task_samples_qwen3.py
 
 ## Requirements
 
-See \`requirements.txt\`. Key dependencies: \`transformers\`, \`peft\`, \`trl\`, \`vllm\`, \`serpapi\`, \`trafilatura\`.
+See `requirements.txt`. Key dependencies: `transformers`, `peft`, `trl`, `vllm`, `serpapi`, `trafilatura`.
 
 ## License
 
