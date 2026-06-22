@@ -51,8 +51,8 @@ The resulting synthetic data is used to fine-tune Qwen3-8B via LoRA, evaluated a
 agentic_web_rag/
 ├── web_retrieval/              # Agentic web retrieval pipeline
 │   ├── pipeline.py             # Main pipeline orchestration
-│   ├── selector_agent.py       # Agent for selecting relevant web content
-│   ├── agentic_retrieval_bio.py   # Domain-specific retrieval (biomedical)
+│   ├── selector_agent.py       # LLM-based paragraph scoring and selection
+│   ├── agentic_retrieval_bio.py   # Domain-specific retrieval (biology)
 │   ├── agentic_retrieval_med.py   # Domain-specific retrieval (medical)
 │   ├── agentic_retrieval_cs.py    # Domain-specific retrieval (commonsense)
 │   └── processing/             # Web content processing utilities
@@ -62,7 +62,7 @@ agentic_web_rag/
 │   ├── sampling.py             # Data sampling utilities
 │   └── filtering/              # Post-generation filtering
 │       ├── attribution.py      # LLM-based attribution analysis
-│       └── regex_checking.py   # Format and quality checks
+│       └── regex_checking.py   # Remove external reference
 ├── services/
 │   └── llm_and_search.py       # LLM inference and search API wrappers
 ├── train_and_eval/             # LoRA fine-tuning and evaluation scripts
