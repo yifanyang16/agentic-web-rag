@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment & secrets
+.env
+.env.*
+*.key
+
+# Model weights & checkpoints
+*.pt
+*.bin
+*.safetensors
+checkpoints/
+outputs/
+runs/
+
+# Data
+data/
+datasets/
+*.jsonl
+*.csv
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SLURM
+*.out
+*.err
+slurm_*.sh
